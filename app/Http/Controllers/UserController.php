@@ -21,4 +21,8 @@ class UserController extends Controller
     function userName($nam) {
         return view('user',['names'=>$nam]);
     }
+
+    function register(){
+        return view('register');
+    }
 }
