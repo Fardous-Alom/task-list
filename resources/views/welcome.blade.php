@@ -5,7 +5,7 @@
     @foreach ($tasks as $task)
     <div>
         <a href="{{route('tasks.show',['id'=>$task->id])}}">
-            {{$task ->title}}
+            <h3>{{$task ->title}}</h3>
         </a>
         </div>
 
