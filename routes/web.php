@@ -60,7 +60,7 @@ Route::get('/', function(){
 });
 
 Route::get('/tasks', function () use($tasks) {
-    return view('welcome',['tasks'=> \App\Models\Task::all()]);
+    return view('welcome',['tasks'=> \App\Models\Task::latest()->get()]);
 })->name('tasks.index');
 
 Route::get('/tasks/{id}', function($id){
